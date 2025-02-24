@@ -10,6 +10,8 @@
 
 <body>
     <div class=" topside">
+        <button class="button" id="loginButton">Se connecter avec Spotify</button>
+        <button class="button" id="logoutButton" style="display: none;">Déconnexion</button>
         <h1>Bienvenue sur SproGfy</h1>
 
     </div>
@@ -17,16 +19,21 @@
     <div class="container">
         <div class="leftside">
 
-            <button class="button" id="loginButton">Se connecter avec Spotify</button>
-            <button class="button" id="logoutButton" style="display: none;">Déconnexion</button>
+            <div class=" carte-spotify">
+            <h3>Mon profil Spotify</h3>
+            <span id="profileName"></span>
+            <span id="profileEmail"></span>
+            </div>
+
+
+           
 
 
         </div>
 
 
         <div class="main">
-            <h2>Bienvenue <span id="profileName"></span></h2>
-            <p>Email : <span id="profileEmail"></span></p>
+          
             <p class="clearable" id="topTrack"></p>
             <p  class= "clearable" id="ecoute"></p>
 
