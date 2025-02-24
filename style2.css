@@ -1,0 +1,170 @@
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.fa-spotify {
+    color: green;
+    width: 70px;
+    height: 70px;
+    font-size: 5em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.logotexte {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+}
+
+.logotexte > h1 {
+    padding: 0;
+    margin: 0;
+    height: 20%;
+}
+
+.logotexte > p {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 65%;
+    margin-top: 1%;
+}
+
+.fa-circle-user, .fa-door-closed {
+    font-size: 2em;
+    margin-top: 1%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.user > h4, .log > h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.info1, .info2, .info3, .info4 {
+    position: relative; /* Changed from absolute to relative */
+    width: 45%;
+    height: 50%;
+    box-sizing: border-box;
+    margin: 2.5%; /* Added margin for spacing */
+    min-height: 500px;
+}
+
+.cadre {
+    width: 100%;
+    height: 500px;
+    border-top: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5%;
+}
+
+
+.cadre > h3 {
+    text-align: center;
+}
+
+.bottom-side {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.fa-github {
+    color: black;
+    width: 70px;
+    height: 70px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.loading-bar-container {
+    width: 60%;
+    max-width: 600px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.loading-bar {
+    display: none;
+    width: 0;
+    height: 100%;
+    background-color: #1DB954; /* Spotify green */
+    border-radius: 20px;
+    border: 1px solid black;
+}

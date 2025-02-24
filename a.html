@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SproGfy</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="all-content">
+        <div class="topside">
+            <i class="fa-brands fa-spotify"></i>
+            <div class="logotexte">
+                <h1>SproGfy</h1>
+                <p> a Spotify API website</p>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-circle-user" id="U"></i>
+                <span id ="imgU"></span>
+                <h4 id="nomU">User</h4>
+            </div>
+            <div class="log" >
+                <i class="fa-solid fa-door-open" style="display: none; font-size: 2em;
+                margin-top: 1%;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;" id="logoutButton"></i>
+                <i class="fa-solid fa-door-closed"id="loginButton"></i>
+                <h4 id="out">Log In</h4>
+            </div>
+        </div>
+
+        <div class=" container">
+            <div class="info1">
+                <div class=" cadre cadre1">
+                    <h3>My Spotify Profile</h3>
+                    <span id="profileName"></span>
+                    <span id="profileEmail"></span>
+                </div>
+
+            </div>
+            <div class="info2">
+
+                <div class="cadre cadre2">
+                    <h3>My Current listening</h3>
+                    <p id="ecoute"></p>
+                    <div class="loading-bar-container">
+                        <div class="loading-bar" id="loadingBar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="info3">
+                <div class=" cadre cadre3">
+                    <h3>My favorite Music</h3>
+                    <p id="topTrack"></p>
+                    
+                </div>
+            </div>
+            <div class="info4">
+                
+                <div class=" cadre cadre4">
+                    <h3>My playlist Creator</h3>
+                    <p id="playlist"></p>
+                </div>
+               
+
+            </div>
+        </div>
+
+        <div class=" bottom-side">
+            <a href="https://github.com/AntoineLaD"><i class="fa-brands fa-github"></i></a>
+            <h2>By AntoineLaD</h2>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8ac9e35898.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
