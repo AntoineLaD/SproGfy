@@ -19,16 +19,16 @@
             </div>
             <div class="user">
                 <i class="fa-solid fa-circle-user" id="U"></i>
-                <span id ="imgU"></span>
+                <span id="imgU"></span>
                 <h4 id="nomU">User</h4>
             </div>
-            <div class="log" >
+            <div class="log">
                 <i class="fa-solid fa-door-open" style="display: none; font-size: 2em;
                 margin-top: 1%;
                 margin: 0;
                 padding: 0;
                 cursor: pointer;" id="logoutButton"></i>
-                <i class="fa-solid fa-door-closed"id="loginButton"></i>
+                <i class="fa-solid fa-door-closed" id="loginButton"></i>
                 <h4 id="out">Log In</h4>
             </div>
         </div>
@@ -37,8 +37,43 @@
             <div class="info1">
                 <div class=" cadre cadre1">
                     <h3>My Spotify Profile</h3>
-                    <span id="profileName"></span>
-                    <span id="profileEmail"></span>
+                    <i class="fa-solid fa-circle-user" id="ProfileUser"></i>
+                    <span id="imgP"></span>
+
+                    <div class="infoProfile">
+                        <span id="profileName">
+                            <p>Nom: </p>
+                        </span>
+                        <span id="profileEmail">
+                            <p>Mail: </p>
+                        </span>
+                        <span id="profileCountry">
+                            <p>Pays: </p>
+                        </span>
+                        <span id="profileFollowers">
+                            <p>Nombre de Followers: </p>
+                        </span>
+                    </div>
+                    <div class="info2Profile">
+                        <div class="lastLike">
+                            <h4>My last like</h4>
+                            <span id="lastLiked">
+
+                            </span>
+                        </div>
+                        <div class="lastFollowed">
+                            <h4>My last followed</h4>
+                            <span id="lastFollow"></span>
+                        </div>
+                        <div class="lastListening">
+                            <h4>My last listening</h4>
+                            <span id="lastListen"></span>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
 
             </div>
@@ -47,6 +82,8 @@
                 <div class="cadre cadre2">
                     <h3>My Current listening</h3>
                     <p id="ecoute"></p>
+                    <div class="player">
+                    </div>
                     <div class="loading-bar-container">
                         <div class="loading-bar" id="loadingBar"></div>
                     </div>
@@ -54,18 +91,55 @@
             </div>
             <div class="info3">
                 <div class=" cadre cadre3">
-                    <h3>My favorite Music</h3>
-                    <p id="topTrack"></p>
+                    <h3>My favorites</h3>
+                    <div class="music">
+                        <h5>Musics</h5>
+                        <span id="topTrack"></span>
+                    </div>
+                    <div class="artist">
+                        <h5>Artists</h5>
+                        <span id="topArtists"></span>
+                    </div>
+                    <div class="album">
+                        <h5>Albums</h5>
+                        <span id="topAlbums"></span>
+                    </div>
                     
+
                 </div>
             </div>
             <div class="info4">
-                
+
                 <div class=" cadre cadre4">
                     <h3>My playlist Creator</h3>
-                    <p id="playlist"></p>
+                    <div class="playlister">
+
+
+                        <div class="playlist-block" style = "display: flex; align-items: center;">
+                            <div id ="buttonPlaylist"style="display: flex;flex-direction: row; border: 2px solid black; justify-content: center; align-items: center; background-color:green;width: 70%; margin-left: 15%;margin-top:3%;border-radius: 10px;height: 5%;margin-bottom: 2%;">
+                                <button style="border:none;outline:none; background-color: green;" onclick="InputInfoNewPlaylist();">Create a new playlist</button>
+                            </div>
+                            <div id = supprPlaylist></div>
+                            <div id="newplaylist"></div>
+
+                            <div id="playlistResult"></div>
+
+                        </div>
+
+                        <div class = "music-block">
+                            <div style="display: flex;flex-direction: row; border: 1px solid black; justify-content: center; align-items: center; background-color: white;width: 50%; margin-left: 23%;margin-top:2%;border-radius: 10px;height: 5%;margin-bottom: 2%;" >
+                                <input type="search" style="border: none; outline: none;" id="MusicInput" placeholder="Music Name"><i class="fa-solid fa-magnifying-glass"></i>
+                                
+                            </div>
+                            <div id="musicResult"></div> 
+
+
+                        </div >
+
+
+                    </div>
                 </div>
-               
+
 
             </div>
         </div>

@@ -168,3 +168,151 @@ body {
     border-radius: 20px;
     border: 1px solid black;
 }
+
+.cadre1{
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cadre1>h3{
+    width: 100%;
+    margin: 0;
+    margin-top: 3%;
+}
+
+
+
+#ProfileUser{
+    margin:0;
+    font-size: 8em;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.infoProfile{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 55%;
+}
+
+.info2Profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    width: 100%;
+    height: 60%;
+}
+
+.lastLike{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastFollowed{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastListening{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.infoProfile>span{
+    margin: 0;
+    padding: 0;
+    height: 25%;
+}
+
+.cadre3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cadre3>h3{
+    margin: 0;
+    margin-top: 3%;
+width: 100%;}
+
+.music{
+    width: 100%;
+    height: 28%;
+    padding: 0;
+
+
+}
+
+.artist{
+    width: 100%;
+    height: 28%;
+    margin-top: 1%;
+    padding: 0;
+
+}
+.album{
+    width: 100%;
+    height: 28%;
+    margin-top: 1%;
+    padding: 0;
+
+}
+
+.cadre3>div>h5{
+    margin-top: 0;
+    margin-left: 1%;
+    margin-bottom: 0%;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 20%;
+}
+
+.playlister{
+    height: 1200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.music-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.playlist-block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.playlistPointer:hover{
+    border-left: 5px solid #1DB954;
+    padding-left:0 ;
+}
+
+.selected{
+    background-color: lightgray;
+    border-radius: 15px;
+}
